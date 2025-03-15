@@ -4,7 +4,7 @@
  returns an array containing all the numbers from start up to and in
 cluding end. */
 
-function range (start, end){
+/* function range (start, end){
     let rangeArray = [];
     for (let i = start; i <= end; i++){
         rangeArray.push(i);
@@ -21,3 +21,27 @@ function sum(rangeArray){
     }
     return sum;
 } 
+ */
+
+
+function range (start, end){
+
+    let rangeArray = [];
+    
+    for (let i = start; i <= end; i++){
+            rangeArray.push(i);
+        }
+            return rangeArray;
+}
+
+let sum = 0;
+let rangeArray = range(1, 10);
+
+rangeArray.forEach((number) => {
+
+    sum += number;
+    return sum;
+
+});
+
+console.log(sum);
