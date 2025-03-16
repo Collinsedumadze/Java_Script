@@ -1,10 +1,4 @@
-//console.log(sum(range(1, 10)));
 
-/* Write a range function that takes two arguments, start and end, and
- returns an array containing all the numbers from start up to and in
-cluding end. */
-
-/* 
 function range1 (start, end){
     let rangeArray = [];
     for (let i = start; i <= end; i++){
@@ -63,32 +57,4 @@ function range3 (start, end, step ){
             rangeArray.push(i);
         }
             return rangeArray;
-} */
-
-//console.log(range3(3, 10, 3));
-
-function range3(start, end, step) {
-    let rangeArray = [];
-
-    // Default step to 1 if not provided
-    if (step === undefined) {
-        step = 1;
-    }
-
-    // Handle positive step (increasing)
-    if (step > 0) {
-        for (let i = start; i <= end; i += step) {
-            rangeArray.push(i);
-        }
-    }
-    // Handle negative step (decreasing)
-    else if (step < 0) {
-        for (let i = start; i >= end; i += step) {
-            rangeArray.push(i);
-        }
-    }
-
-    return rangeArray;
 }
-
-console.log(range3(10, 3, -3)); // ➞ [10, 7, 4]
