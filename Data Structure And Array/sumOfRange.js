@@ -4,7 +4,7 @@
  returns an array containing all the numbers from start up to and in
 cluding end. */
 
-/* 
+
 function range1 (start, end){
     let rangeArray = [];
     for (let i = start; i <= end; i++){
@@ -63,9 +63,8 @@ function range3 (start, end, step ){
             rangeArray.push(i);
         }
             return rangeArray;
-} */
-
-//console.log(range3(3, 10, 3));
+} 
+console.log(range3(3, 10, 3));
 
 function range3(start, end, step) {
     let rangeArray = [];
